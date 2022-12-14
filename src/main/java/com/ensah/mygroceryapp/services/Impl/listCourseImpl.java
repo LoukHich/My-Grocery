@@ -6,7 +6,8 @@ import com.ensah.mygroceryapp.models.Registre;
 import com.ensah.mygroceryapp.repo.CourseListRepo;
 import com.ensah.mygroceryapp.repo.ProductRepo;
 import com.ensah.mygroceryapp.repo.RegistrationRepo;
-import com.ensah.mygroceryapp.services.IlistCourseSerivice;
+
+import com.ensah.mygroceryapp.services.IListCourseSerivice;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,7 +18,7 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 @Transactional
-public class listCourseImpl implements IlistCourseSerivice {
+public class listCourseImpl implements IListCourseSerivice {
 
     private final CourseListRepo courseListRepo;
     private final ProductRepo productRepo;

@@ -5,7 +5,7 @@ import com.ensah.mygroceryapp.models.Product;
 import com.ensah.mygroceryapp.repo.CourseListRepo;
 import com.ensah.mygroceryapp.repo.ProductRepo;
 import com.ensah.mygroceryapp.repo.RegistrationRepo;
-import com.ensah.mygroceryapp.services.IlistCourseSerivice;
+import com.ensah.mygroceryapp.services.IListCourseSerivice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -18,7 +18,7 @@ import java.util.stream.Stream;
 
 public class MyGroceryAppApplication {
     @Autowired
-    private IlistCourseSerivice courseService;
+    private IListCourseSerivice courseService;
 
 
     public static void main(String[] args) {
@@ -78,7 +78,7 @@ public class MyGroceryAppApplication {
 
             System.out.println(productRepo.countDistinctByRegistresCourseName("Liste Course 2"));
             System.out.println("Finish......");
-            System.out.println("test modification .......");
+
             //System.out.println(courseRegistrationRepo.getByCourseIdAndProductId(2l,2l));
 //            System.out.println(courseRegistrationRepo.getByCourseIdAndProductId(2l,1l).stream().count());
 //            System.out.println(courseRegistrationRepo.countByCourseIdAndProductId(2l,2l));

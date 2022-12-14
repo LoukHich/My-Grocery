@@ -4,7 +4,7 @@ import com.ensah.mygroceryapp.models.Product;
 
 import java.util.List;
 
-public interface IlistCourseSerivice {
+public interface IListCourseSerivice {
 
      void addProductToCourse(String courseName ,String productName);
 
