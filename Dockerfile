@@ -1,8 +1,7 @@
 FROM openjdk:17
-ADD target/My*.jar  /GroceryApp.jar
+ADD target/My-Grocery-App-0.0.1-SNAPSHOT.jar  /GroceryApp.jar
 ENTRYPOINT [ \
     "java", \
     "-jar", \
     "GroceryApp.jar" \
 ]
-EXPOSE 8080
