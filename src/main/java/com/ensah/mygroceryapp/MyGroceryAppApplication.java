@@ -28,7 +28,7 @@ public class MyGroceryAppApplication {
     @Bean
     CommandLineRunner start(CourseListRepo courseListRepo, ProductRepo productRepo, RegistrationRepo registrationRepo) {
         return args -> {
-
+            System.out.println("start......");
             //Save product
             Product prod1 = new Product();
             prod1.setName("Lait");
@@ -76,6 +76,7 @@ public class MyGroceryAppApplication {
             });
 
             System.out.println(productRepo.countDistinctByRegistresCourseName("Liste Course 2"));
+            System.out.println("Finish......");
             //System.out.println(courseRegistrationRepo.getByCourseIdAndProductId(2l,2l));
 //            System.out.println(courseRegistrationRepo.getByCourseIdAndProductId(2l,1l).stream().count());
 //            System.out.println(courseRegistrationRepo.countByCourseIdAndProductId(2l,2l));
