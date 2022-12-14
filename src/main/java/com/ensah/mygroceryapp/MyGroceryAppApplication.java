@@ -61,6 +61,7 @@ public class MyGroceryAppApplication {
             courseService.addProductToCourse("Liste Course 1", "Orange");//(1,4)
             courseService.addProductToCourse("Liste Course 2", "Lait");//(2,1)
             courseService.addProductToCourse("Liste Course 2", "Oeuf");//(2,2)
+            courseService.addProductToCourse("Liste Course 2", "Orange");//(2,2)
 
 
             Stream.of("Liste Course 1", "Liste Course 2").forEach(list -> {
@@ -77,6 +78,7 @@ public class MyGroceryAppApplication {
 
             System.out.println(productRepo.countDistinctByRegistresCourseName("Liste Course 2"));
             System.out.println("Finish......");
+            System.out.println("test modification .......");
             //System.out.println(courseRegistrationRepo.getByCourseIdAndProductId(2l,2l));
 //            System.out.println(courseRegistrationRepo.getByCourseIdAndProductId(2l,1l).stream().count());
 //            System.out.println(courseRegistrationRepo.countByCourseIdAndProductId(2l,2l));
