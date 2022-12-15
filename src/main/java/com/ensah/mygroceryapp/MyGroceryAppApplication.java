@@ -77,7 +77,7 @@ public class MyGroceryAppApplication {
             });
 
             System.out.println(productRepo.countDistinctByRegistresCourseName("Liste Course 2"));
-            System.out.println("Finish......");
+            System.out.println("Finish....");
 
             //System.out.println(courseRegistrationRepo.getByCourseIdAndProductId(2l,2l));
 //            System.out.println(courseRegistrationRepo.getByCourseIdAndProductId(2l,1l).stream().count());
