@@ -37,7 +37,7 @@ public class MyGroceryAppApplication {
             prod2.setName("Oeuf");
 
             Product prod3 = new Product();
-            prod3.setName("Kiri");
+            prod3.setName("Poisson");
 
             Product prod4 = new Product();
             prod4.setName("Orange");
