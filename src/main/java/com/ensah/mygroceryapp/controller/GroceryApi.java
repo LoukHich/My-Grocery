@@ -17,7 +17,7 @@ public class GroceryApi {
      private IListCourseSerivice listCourseService;
      @GetMapping("/test")
      public String test(){
-         return "Bonjour";
+         return "Bonjour  Hayat Routaib";
      }
     @GetMapping("/products/{courseName}")
     List<Product> getProductsOFCourse(@ PathVariable("courseName") String courseName){
